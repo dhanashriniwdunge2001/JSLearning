@@ -12,9 +12,9 @@ console.log("Typeof variable myName:",  typeofMyName);
 console.log("typeof variable;", typeof fatherName);
 
 
-var typeofage = typeof age;
+var typeofage = typeofage
 console.log("Typeof variable age:",  typeofage);
-console.log("typeof variable;", typeof weight);
+console.log("typeof variable weight;", typeof weight);
 
 var typeofisMarried = typeof isMarried;
 console.log("Typeof variable isMarried:",  typeofisMarried);
