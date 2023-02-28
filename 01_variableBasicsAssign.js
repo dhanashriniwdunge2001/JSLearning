@@ -14,7 +14,6 @@ console.log("isMarried:",isMarried, ",type:", typeof isMarried);
 console.log("---step 2---");
 console.log("Difference Between Null and Undefined ");
 
-console.log(`Null is used to represent an intentional absence of value. If represents a variable whose value is undefined. It accept only one value, Which is null.
-`);
 
-console.log(`It `);
+
+console.log(`Undefined means the variable has been declared, but its value has not been assigned. Null means an empty value or a blank value. The typeof() operator returns undefined for an undefined variable. The typeof() operator returns the type as an object for a variable whose value is assigned as null.`);
