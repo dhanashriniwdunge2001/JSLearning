@@ -15,8 +15,16 @@ let student = {
     friends: ["Bill", "Stew", "Elon"],
     show: function(){
         console.log("I am show() function");
+    },
+    addressDetails: function(){
+        this.address
+return`Address is: street${this.address.street},city${this.address.city}, PIN${this.address.PIN}`
     }
 };
+
+let resultAddress = student.addressDetails();
+console.log(resultAddress);
+
 student.show()
 
 console.log(student.friends);
