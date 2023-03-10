@@ -24,7 +24,7 @@ let axisBank = {
 };
 axisBank.showDetails();
 
-let hdfcBAnk = {
+let hdfcBank = {
     bankName: "HDFC Bank",
     location: "A.Nagar",
     accountNo: 5215455835565,
@@ -35,9 +35,9 @@ let hdfcBAnk = {
         console.log(`Bank Name: ${this.bankName}, Location: ${this.location}, Account No: ${this.accountNo}, IFSC Code: ${this.ifseCode}, Interest Rate: ${this.interestRate}`);
     }
 };
-hdfcBAnk.showDetails();
+hdfcBank.showDetails();
 
-let yesBAnk = {
+let yesBank = {
     bankName: "YES Bank",
     location: "Nashik",
     accountNo: 8564235986565,
@@ -48,4 +48,5 @@ let yesBAnk = {
         console.log(`Bank Name: ${this.bankName}, Location: ${this.location}, Account No: ${this.accountNo}, IFSC Code: ${this.ifseCode}, Interest Rate: ${this.interestRate}`);
     }
 };
-yesBAnk.showDetails();
+yesBank.showDetails();
+
