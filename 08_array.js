@@ -66,8 +66,7 @@ arrayOfNumbers.splice(2,1,50,60);
 console.log(arrayOfNumbers);
 
 console.log("=====splice() to replace one elements ====================");
-var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
-arrayOfNumbers.splice(2, 2 ,50,60);
+var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               OfNumbers.splice(2, 2 ,50,60);
 console.log(arrayOfNumbers);
 
 // arraySeasonalFruit[length-1]
