@@ -24,3 +24,10 @@ console.log(multiplyResult);
 
 let multiplyRes = (num1, num2) =>  num1 * num2;
 console.log(multiplyRes(30, 5));
+
+
+let display = (arg) => {
+    let result = arg * 10;
+     console.log (result)
+   }
+   display(10);
