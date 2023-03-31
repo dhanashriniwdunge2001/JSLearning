@@ -1,4 +1,3 @@
-
 console.log("====== API getElementsByTagName() to select element by tag name  =====");
 const h2Element = document.getElementsByTagName("h2");
 console.log(h2Element[1].innerHTML);
@@ -22,8 +21,6 @@ console.log(elementByQuery);
 
 console.log("====== API querySelectorAll() to select element by class  =====");
 const elementsByQuery = document.querySelectorAll(".liItem");
-console.log(elementsByQuery);
-
 elementsByQuery[3].innerHTML = "Oracle Database";
 console.log(elementsByQuery[3]);
 
@@ -35,9 +32,49 @@ console.log(elementMyProfile);
 console.log("====== Changing the CSS properties =====");
 const elementTechStack = document.querySelector("#techStack");
 elementTechStack.style.color = "red";
-elementTechStack.style.fontFamily = "Courier New', Courier, monospace";
+elementTechStack.style.fontFamily = "Arial";
 
 console.log("====== Remove Element =====");
 const elementDivProject = document.querySelector("#divProject");
 const elementProject = document.querySelector("#project");
 elementDivProject.removeChild(elementProject);
+
+console.log("====== Adding Element =====");
+const elementDiv = document.querySelector("#divProject");
+const elementP = document.createElement("p");
+const elementText = document.createTextNode("Team Size - 7");
+elementP.appendChild(elementText);
+elementDiv.appendChild(elementP);
+
+
+const elementAddress = document.querySelector("#address");
+elementAddress.addEventListener("click", ()=> {
+    console.log("Listening click event.....");
+    // alert("You have clicked on address");
+    const inputValue = prompt("This is the title", "Default value");
+    console.log(inputValue);
+
+});
+
+elementAddress.addEventListener("mouseover", () => {
+    console.log("Mouse over....");
+    elementAddress.style.color = "red";
+});
+
+
+function show(){
+    console.log("Click event.....");
+}
+
+const isEvenButton = document.querySelector("#isEvenButton");
+isEvenButton.addEventListener('click', () => {
+    const inputValue = prompt("Please enter number to check..", 0);
+    console.log(inputValue);
+    const result = inputValue%2==0 ? true : false;
+    if(result){
+        alert("Given Number is Even");
+    }else{
+        alert("Given number is Odd");
+    }
+} );
+
