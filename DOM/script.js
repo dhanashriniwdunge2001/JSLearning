@@ -66,15 +66,39 @@ function show(){
     console.log("Click event.....");
 }
 
+// const isEvenButton = document.querySelector("#isEvenButton");
+// isEvenButton.addEventListener('click', () => {
+//     const inputValue = prompt("Please enter number to check..", 0);
+//     console.log(inputValue);
+//     const result = inputValue%2==0 ? true : false;
+//     if(result){
+//         alert("Given Number is Even");
+//     }else{
+//         alert("Given number is Odd");
+//     }
+// } );
+
+function show() {
+    
+}
 const isEvenButton = document.querySelector("#isEvenButton");
 isEvenButton.addEventListener('click', () => {
     const inputValue = prompt("Please enter number to check..", 0);
-    console.log(inputValue);
-    const result = inputValue%2==0 ? true : false;
-    if(result){
-        alert("Given Number is Even");
+    const givenNum = +inputValue;
+    if (inputValue==null || isNaN(givenNum) || givenNum<0) {
+        alert("Invalid value");
     }else{
-        alert("Given number is Odd");
+        const result = inputValue%2==0 ? true : false;
+        if(result){
+            alert("Given Number is Even");
+        }else{
+            alert("Given number is Odd");
+        }
     }
 } );
 
+const confirmElement = document.querySelector("#confirm");
+confirmElement.addEventListener('click',  () => {
+   const result = confirm("Are you sure ?");
+   console.log(result);
+});
