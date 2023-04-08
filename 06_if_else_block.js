@@ -49,3 +49,11 @@ gradecalculation("seventy two");
 gradecalculation(NaN); // invalid data)
 gradecalculation(undefined);
 gradecalculation(null);
+
+ // JavaScript program to illustrate If-else statement
+ var i = 10;
+  
+ if (i < 15)
+ console.log("I am in the if block");
+ else
+ console.log("I am Not in the if block");
